@@ -1,0 +1,3 @@
+float32 distance_remaining
+float32 speed
+bool obstacle_detected
