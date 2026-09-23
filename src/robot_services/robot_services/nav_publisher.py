@@ -31,7 +31,9 @@ class NavPublisher(Node):
         
 def main(args=None):
     rclpy.init(args=args)
+
     node = NavPublisher()
+
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
@@ -39,8 +41,3 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
-
-
-if __name__ == '__main__':
-    main()
-        
